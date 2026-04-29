@@ -6,6 +6,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ContactSec from './components/contactSection';
 import TabbedServices from './components/AllServices';
+import AdminLogin from './Pages/AdminLogin';
+import AdminBlogs from './Pages/AdminBlogs';
+import Blogs from './Pages/Blogs';
+import BlogDetail from './Pages/Blogdetail';
+import ProtectedRoute from './components/ProtectedRoutes';
 
 // Lazy-loaded pages
 const HomePage = lazy(() => import('./Pages/HomePage'));
@@ -65,6 +70,20 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/contact" element={<ContactSec />} />
           <Route path="/services" element={<TabbedServices />} />
+           <Route path="/admin" element={<AdminLogin />} />
+
+          <Route
+            path="/admin/blogs"
+            element={
+              <ProtectedRoute>
+                <AdminBlogs />
+              </ProtectedRoute>
+            }
+          />
+
+           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog/*" element={<BlogDetail />} />   
+           
         </Routes>
       </Suspense>
 

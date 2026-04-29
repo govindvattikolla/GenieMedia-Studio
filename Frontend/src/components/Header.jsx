@@ -36,6 +36,7 @@ const Header = () => {
   ]
     },
     { name: 'Projects', href: '/projects' },
+    { name: 'Blog', href: '/blogs' },
     {
       name: 'Reviews',
       href: '/reviews',
