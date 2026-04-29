@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Calendar, Tag } from "lucide-react";
-import BASE_URL from "../api";
+import BASE_URL from "../Api";
 
 export default function Blogs() {
   const [blogs, setBlogs] = useState([]);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import BlogEditor from "../components/BlogEditor";
-import BASE_URL from "../api";
+import BASE_URL from "../Api";
 import {
   Menu, X, LogOut, BookOpen, Edit2, Trash2, Plus,
   Search, Filter, CheckCircle, AlertCircle, Loader, ChevronRight,

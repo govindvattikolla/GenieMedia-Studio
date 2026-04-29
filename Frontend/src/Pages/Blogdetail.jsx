@@ -4,7 +4,7 @@ import {
     ArrowLeft, Calendar, Tag, Share2, Copy, Check, ArrowRight, Hash, X,
 } from "lucide-react";
 import DOMPurify from "dompurify";
-import BASE_URL from "../api";
+import BASE_URL from "../Api";
 
 const FALLBACK =
     "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=80";
